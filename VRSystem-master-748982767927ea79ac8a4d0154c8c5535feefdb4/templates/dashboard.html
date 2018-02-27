@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speechify</title>
+    <style>
+        .center {
+            padding: 70px 0;
+            border: 3px solid green;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+<h1>Welcome to Speechify</h1>
+    <p>Please upload an audio file</p>
+<form id="upload-form" method="POST" enctype=multipart/form-data action="{{ url_for('upload') }}">
+    <input type="file" name="file" accept="audio/*">
+    <input type="submit" value="send">
+</form>
+</div>
+</body>
+</html>
+

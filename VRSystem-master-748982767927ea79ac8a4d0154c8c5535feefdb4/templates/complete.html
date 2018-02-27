@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Speechify</title>
+    <style>
+        .center {
+            padding: 70px 0;
+            border: 3px solid green;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="center">
+    <h1>Speechify's prediction is:</h1>
+    <p>{{string_decoded}}</p>
+    <div class="container" align="center">
+        <a href='/' ><button class='btn btn-default'>Back</button></a>
+        <a href="{{url_for('download_txt', str_decoded= string_decoded) }}" target="blank">
+            <button class='btn btn-default'>Download Text</button></a>
+    </div>
+</div>
+
+</body>
+</html>
+
